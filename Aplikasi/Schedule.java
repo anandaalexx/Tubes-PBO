@@ -4,14 +4,8 @@ import java.util.Date;
 
 public class Schedule {
     private String title;
-    private String prioritas;
-    private Date tanggal;
-
-    public Schedule(String title, String prioritas, Date tanggal) {
-        this.title = title;
-        this.prioritas = prioritas;
-        this.tanggal = tanggal;
-    }
+    private String priority;
+    private Date date;
 
     public String getTitle() {
         return title;
@@ -21,19 +15,19 @@ public class Schedule {
         this.title = title;
     }
 
-    public String getPrioritas(){
-        return prioritas;
+    public String getPriority(){
+        return priority;
     }
 
-    public void setPrioritas(String prioritas){
-        this.prioritas = prioritas;
+    public void setPriority(String priority){
+        this.priority = priority;
     }
 
-    public Date getTanggal(){
-        return tanggal;
+    public Date getDate(){
+        return date;
     }
 
-    public void setTanggal(Date tanggal){
-        this.tanggal = tanggal;
+    public void setDate(Date date){
+        this.date = date;
     }
 }
